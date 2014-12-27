@@ -13,7 +13,7 @@ public class NewBehaviourScript : MonoBehaviour {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetMouseButton(0))
         {
-            gameObject.rigidbody2D.AddForce((mousePos - gameObject.transform.position) * 1f);
+            gameObject.rigidbody2D.AddForce((mousePos + gameObject.transform.position) * 1f);
         }
 
        
