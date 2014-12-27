@@ -15,7 +15,7 @@ public class BallBehavior : MonoBehaviour {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetMouseButton(0))
         {
-            gameObject.rigidbody2D.AddForce((mousePos - gameObject.transform.position) * 10f);
+            gameObject.rigidbody2D.AddForce((mousePos - gameObject.transform.position) * 10.0f);
         }
 
         animator.SetFloat("Speed", gameObject.rigidbody2D.velocity.magnitude);
